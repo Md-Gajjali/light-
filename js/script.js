@@ -95,22 +95,22 @@
 // }
 
 
-document.getElementById("btn").addEventListener("click", handleClick);
+// document.getElementById("btn").addEventListener("click", handleClick);
 
 
-let state = false;
+// let state = false;
 
-function handleClick () {
-    if (state == true) {
-        document.getElementById("bulb").src="https://icons.veryicon.com/png/o/business/business-style-icon/light-bulb-11.png";
-        bulb.style.display="block"
-        state = false
-    } else {
-        document.getElementById("bulb").src="https://cdn-icons-png.flaticon.com/512/3141/3141531.png";
-        bulb.style.display="block"
-        state = true
-    }
-}
+// function handleClick () {
+//     if (state == true) {
+//         document.getElementById("bulb").src="https://icons.veryicon.com/png/o/business/business-style-icon/light-bulb-11.png";
+//         bulb.style.display="block"
+//         state = false
+//     } else {
+//         document.getElementById("bulb").src="https://cdn-icons-png.flaticon.com/512/3141/3141531.png";
+//         bulb.style.display="block"
+//         state = true
+//     }
+// }
 
 
 // document.getElementById("btn").addEventListener("click",handleClick);
@@ -127,3 +127,12 @@ function handleClick () {
 //     }
 // }
 
+
+let one = document.querySelector(".one");
+let btn = document.querySelector("#btn")
+
+btn.addEventListener("click",handleClick);
+
+function handleClick (){
+    one.classList.add("two");
+}
