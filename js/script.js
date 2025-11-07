@@ -129,11 +129,12 @@
 
 
 let one = document.querySelector(".one");
-let lack = document.querySelector(".lack")
 let btn = document.querySelector("#btn")
 
 btn.addEventListener("click",handleClick);
 
 function handleClick (){
-    lack.classList.remove("two");
+    one.classList.toggle("two");
 }
+
+
