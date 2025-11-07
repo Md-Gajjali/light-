@@ -129,10 +129,11 @@
 
 
 let one = document.querySelector(".one");
+let lack = document.querySelector(".lack")
 let btn = document.querySelector("#btn")
 
 btn.addEventListener("click",handleClick);
 
 function handleClick (){
-    one.classList.add("two");
+    lack.classList.remove("two");
 }
